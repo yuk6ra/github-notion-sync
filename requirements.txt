@@ -1,0 +1,4 @@
+requests==2.28.2
+python-dotenv==1.0.0
+notion2md==2.8.2
+PyGithub==1.58.0
