@@ -129,4 +129,10 @@ def main(request):
         notion_database_id=database_id
     )
 
-    sync.run()
+    try:
+        sync.run()
+    except Exception as e:
+        logging.error(e)
+        return {"status": "error - " + str(e)}
+
+    return {"status": "success"}
